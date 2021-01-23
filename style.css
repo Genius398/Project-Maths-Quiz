@@ -1,19 +1,12 @@
 body
 {
-	background: lightblue;
+	background: #ce4a4a ;
 }
 
-	.player_1_login , .player_2_login
+	.login_div1 , .login_div2
 	{
 		background: white;
 		padding: 10px;
 		float: none;
 		border-radius: 15px;
 	}
-
-
-#player_1_id , #player_2_id
-{
-	display: inline-block;
-	margin-left: 20px;
-}
