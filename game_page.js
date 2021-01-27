@@ -34,23 +34,39 @@ function send() {
 question_turn = "player1";
 answer_turn = "player2";
 
-function check()
-{
+function check(){
 	get_answer = document.getElementById("input_check_box").value;
 	if(get_answer == actual_answer)	
 	{
 		if(answer_turn == "player1")
 		{
 			player1_score = player1_score +1;
-		    document.getElementById("player1_score").innerHTML = player1_score;
+			document.getElementById("player1_score").innerHTML = player1_score;
+			window.alert("Congrats,"+player1_name+"! You have got the correct answer and have scored 1 point.");
 		}
 		else 
 		{
 			player2_score = player2_score +1;
-		    document.getElementById("player2_score").innerHTML = player2_score;
+			document.getElementById("player2_score").innerHTML = player2_score;
+			window.alert("Congrats,"+player2_name+"! You have got the correct answer and have scored 1 point.");
 		}
 	}
 	
+	if (get_answer !== actual_answer)
+	{
+		if(answer_turn == "player1")
+		{
+			player1_score = player1_score -1;
+			document.getElementById("player1_score").innerHTML = player1_score;
+			window.alert("That was the incorrect answer"+player1_name+"You have Lost 1 point");
+		{
+			player2_score = player2_score -1;
+			document.getElementById("player2_score").innerHTML = player2_score;
+			window.alert("That was the incorrect answer"+player2_name+"You have Lost 1 point");
+		}
+	}
+
+
 	if(question_turn == "player1")
 	{
 		question_turn = "player2"

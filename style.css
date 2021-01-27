@@ -1,6 +1,7 @@
 body
 {
-	background: #ce4a4a ;
+	background: #ffcdcd ;
+	text-emphasis-color: black;
 }
 
 	.login_div1 , .login_div2
@@ -10,3 +11,18 @@ body
 		float: none;
 		border-radius: 15px;
 	}
+
+
+
+
+
+
+
+
+number1{
+	margin-bottom: 20px;
+}
+
+number2{
+	margin-top: 20px;
+}
